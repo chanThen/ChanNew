@@ -1,0 +1,24 @@
+<div class="container"><div class="col-md-12" id="subscriptionPage">
+  <div class="col-sm-3"></div>
+  <div id="centertag" class="col-sm-6">
+    <div class="subscription-page-heading">Subscription Page</div>
+    <form #subscriptionDetails="ngForm" id="formId" class="form-horizontal"
+      role="form" align="center"(ngSubmit)= "payToSubscribe(subscriptionDetails.value)">
+      First name:<input type="text" name="UserName" [(ngModel)]="userDetail.name" required>
+         <br>
+       Mobile Number:<input type='tel' pattern='\d{10}' name="phonenumber" [(ngModel)]="subscriptionDetails.phonenumber"title='Phone Number (Format: 9999999999)'> 
+          <br>
+        Payment method:<select required #cardtypes="ngModel" name="cardtype" [(ngModel)]="subscriptionDetails.type">
+            <option value="paytm">Paytm</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Internet Banking">Internet Banking</option>
+        </select>
+          <br>
+        <input type="submit"  value="Submit">
+    </form>
+    </div>
+    <div class="col-sm-3"></div>
+  </div>
+</div>
+  

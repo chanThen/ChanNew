@@ -1,0 +1,28 @@
+<div  class="container">
+	<div *ngIf="showDetail">
+		<div *ngFor="let wishListdata of wishListdata" class="col-sm-3">
+			<div id="wishlistthumbnail" class="thumbnail">
+				<div class="wishlistimage_alignment">
+					<img class="img-responsive" src={{wishListdata.bookDetail.imagePath}} alt="Image">
+				</div>
+				<div class="wishlistauthor_alignment">
+					Author:<strong> {{wishListdata.bookDetail.author}}</strong>
+				</div>
+				<div class="wishList_submitbutton_alignment">
+					<button (click)="removeFromWishList(wishListdata.wishListId)"
+					class="btn btn-danger">Remove from WishList</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div *ngIf="!showDetail">
+			<div class="container">
+					<div stlyle="text-align:center" class="jumbotron">
+						<p>
+								There Are No Items Available in Your WishList 
+								<strong>:(</strong>
+						</p>
+					</div>
+				</div>
+	</div>
+</div>

@@ -1,0 +1,17 @@
+#category_image_alignment{
+    height: 460px;
+    width: 400px;
+}
+#category_button_alignment{
+    text-align: center;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+#category_button_alignment button{
+padding-left: 50px;
+padding-right: 32px;
+}
+
+#category_caption_alignment{
+    text-align: center;
+}

@@ -1,0 +1,12 @@
+<div class="login-page">
+		<h2>LOGIN</h2>
+	<div class="form">
+				<form class="login-form"  #userDetails="ngForm" (ngSubmit)= "login(userDetails.value)" method="post">
+			<input type="email" placeholder="mailid" ngModel name="email"><br/>
+			<input type="password" placeholder="password" ngModel name="pwd"><br/>
+						<button type="submit">Log In</button><br/><br>
+				</form>
+				<p>Not a member? <a [routerLink]="['/signUp']">Sign up now</a><span class="fontawesome-arrow-right"></span></p>
+	</div>
+		  
+		  

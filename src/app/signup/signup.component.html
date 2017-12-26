@@ -1,0 +1,24 @@
+<body>
+        <div class="container">
+          <div class= "heading-alignment">
+          <h1>SignUp Page</h1>
+          </div>
+          <div id="login">
+            <form #userDetails="ngForm" (ngSubmit)= "signup(userDetails.value)" method="post">
+              <fieldset class="clearfix">
+    
+                <p><span class="fontawesome-user"></span><input type="text" value="name" ngModel name="name" onBlur="if(this.value == '') this.value = 'username'" onFocus="if(this.value == 'username') this.value = ''" required></p>
+                <p><span class="fontawesome-info-sign"></span><input type="text" value="email" ngModel name="email" onBlur="if(this.value == '') this.value = 'email'" onFocus="if(this.value == 'email') this.value = ''" required></p>
+                <p><span class="fontawesome-lock"></span><input type="password"  value="pwd" ngModel name="pwd" onBlur="if(this.value == '') this.value = 'Password'" onFocus="if(this.value == 'Password') this.value = ''" required></p>
+                <p><input type="submit" value="Sign Up"></p>
+    
+              </fieldset>
+    
+                  </form>
+    
+    
+                </div>
+    
+        </div>
+      </body>
+    

@@ -1,0 +1,31 @@
+<div id="productPage-div-alignment" class="container">
+	<!-- <div class="row">
+		<div class="col-sm-12">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4">
+				<input type="text" id="search-text-control"  class="form-control"  placeholder="Search for the books">
+				<span class="glyphicon glyphicon-search fa-4x"></span>
+			</div>
+			<div class="col-sm-4"></div>
+		</div>
+	</div> -->
+	<div class="row">
+		<div class="col-sm-12">
+			<div class="productalignment" *ngFor="let products of product">
+				<div class="col-sm-4">
+					<div id="productPage_thumbnailalignment" class="thumbnail">
+						<div>
+							<img class="img-responsive" class="productPage_imageStyle" src={{products.imagePath}} alt="Lights">
+						</div>
+						<div class="caption">
+							<p>{{products.bookName}}</p>
+						</div>
+						<div id="button_alignment">
+							<button	(click)="checkForSubscription(products.bookId)" class="btn btn-success">Subscribe</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

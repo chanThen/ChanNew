@@ -1,0 +1,19 @@
+.productPage_imageStyle{
+    height: 460px;
+    width: 294px;
+}
+#productPage_thumbnailalignment{
+    width: 304px;
+}
+#button_alignment button{
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+#button_alignment{
+    margin-left: 80px;
+}
+
+.caption{
+    text-align: center;
+}

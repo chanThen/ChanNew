@@ -1,0 +1,75 @@
+img {
+    width: 341px;
+}
+
+#single-product-alignments{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    font-family: cursive;
+    color: black;
+    margin-left: auto;
+}
+
+#singleProduct-margin-alignment{
+	margin-top: 30px;
+    margin-left: -25px;
+}
+
+#bookName-alignment {
+    padding-bottom: 29px;
+    text-align: -webkit-center;
+}
+
+.category-imageStyle{
+	width: 343px;
+    height: 535px;
+}
+
+#single-page-successButton{
+	margin-top: 30px;
+}
+
+.category-Ratingt {
+	    font-weight: 900;
+}
+
+
+#Description-alignment {
+	font-size: 20px;
+    font-style: normal;
+    padding-bottom: 32px;
+    text-align: justify;
+}
+
+#authorName{
+
+	padding-bottom: 32px;
+    font-size: 22px;
+}
+
+#commentbox {
+    resize: vertical;
+}
+
+.show-rating {
+	float: right;
+    padding-right: 230px;
+}
+
+#show_Rating_username {
+	font-size: 17px;
+}
+    
+#singleProduct_show_comment {
+	margin-top: 30px;
+    font-size: 18px;
+    font-family: serif;
+}
+
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+    color: black;
+}

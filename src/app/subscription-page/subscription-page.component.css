@@ -1,0 +1,63 @@
+.subscription-page-heading {
+	font-size: 24px;
+    font-family: cursive;
+    margin-bottom: 45px;
+}
+#centertag {
+	background-color: lightgray;
+	border-radius: 10%;
+    margin-top: 5%;
+    padding-bottom: 51px;
+    padding-top: 19%;    
+}
+
+.center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;  
+  }
+  #subscriptionPage {
+    
+    text-align: center;
+    color: black;
+    font-size: medium;
+	
+}
+#userdetail {
+	width: 221px;
+}
+
+#formId {
+	text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#buttonId {
+	margin-left: 37%;
+    margin-top: -31px;
+    width: 211px;
+}
+
+.form-horizontal .form-group{
+margin-right: -37px;
+    margin-left: -5px;
+}
+
+#centertag {border-radius: 10%;
+    margin-top: 2%;
+    padding-bottom: 51px;
+    padding-top: 4%;
+}
+
+#subscriptionpage-Button{
+	padding-left: 70px;
+    padding-top: 22px;
+    margin-top: 28px;
+}
+
+input{
+margin-bottom: 10px;
+margin-top: 10px;
+}

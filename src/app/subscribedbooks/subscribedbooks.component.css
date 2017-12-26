@@ -1,0 +1,15 @@
+.subscribedBooksImage_alignment img{
+    width: 350px;
+    height: 380px;
+}
+.subscribedBooks_submitbutton_alignment button {
+    margin-left: 55px;
+    padding-left: 34px;
+    padding-right: 34px;
+}
+
+.subscribedBooksauthor_alignment{
+    text-align: center;
+    padding-bottom:10px;
+    padding-top: 10px;
+}

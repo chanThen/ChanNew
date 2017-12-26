@@ -1,0 +1,71 @@
+<div id="single-product-alignments" class="container">
+  
+    <div id="singleProduct-margin-alignment" class="col-sm-4">
+      <div class="thumbnail">
+        <div>
+          <img class="img-responsive" class="category-imageStyle" src={{singleProductData.imagePath}} alt="Lights">
+        </div>
+      </div>
+      <div>
+        <h4>Leave a Comment:</h4>
+      </div>
+      <div>
+        <form #reviewDetails="ngForm" (ngSubmit)= "addToReview(reviewDetails.value)" method="post" class="status" role="form">
+          <div class="form-group">
+            <textarea id="commentbox" name="commentText" class="form-control" ngModel required></textarea>
+          </div>
+          <div>
+          <div id="category-Rating">
+            <strong >Rating:</strong>
+            <label class="radio-inline"> <input
+              type="radio" name="optradio" value="1" ngModel required> 1
+            </label> <label class="radio-inline"> <input type="radio"
+              name="optradio" value="2" ngModel required> 2
+            </label> <label class="radio-inline"> <input type="radio"
+              name="optradio" value="3" ngModel required> 3
+            </label><label class="radio-inline"> <input type="radio"
+              name="optradio" value="4" ngModel  required> 4
+            </label><label class="radio-inline"> <input type="radio"
+              name="optradio" value="5" ngModel required> 5
+            </label></div> 
+          </div>
+          <div id="single-page-successButton">
+            <button class="btn btn-success">submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="single-product-alignments" class="col-sm-8">
+      <div class="row content">
+        <div id="bookName-alignment">
+          <h2>{{singleProductData.bookName}}</h2>
+        </div>
+        <div>
+          <p id="Description-alignment">{{singleProductData.bookDescription}}<p>
+        </div>
+      </div>
+      <div class="row content">
+        <div id="authorName">
+          <a>Authour Name :</a>{{singleProductData.author}}
+        </div>
+        <div >
+          <button (click)="addToWishList()" class="btn btn-success">Add
+          To Favourite</button>
+        </div>
+       
+      </div>
+      <div>
+        <h2>Comments</h2>
+      </div>
+       <div id="comment-box-alignment" *ngFor="let review of bookreviewDetails" class="row content">
+        <ul class="list-group">
+          <li class="list-group-item"> <div id="show_Rating_username"> UserName : <strong> {{review.name}} </strong> <span class="show-rating"> Ratings:{{review.bookRating}} </span> </div>
+            <div id="singleProduct_show_comment">
+              {{review.bookComment}}
+            </div>
+          </li>
+        </ul>
+      </div> 
+    </div>
+    </div> 
+  

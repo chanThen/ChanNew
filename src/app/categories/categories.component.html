@@ -1,0 +1,18 @@
+<div  	class="container">
+	<div *ngFor = "let category of category">
+		<div class="col-sm-4">
+			<div id="category_thumbnail_alignment" class="thumbnail">
+				<div>
+					<img class="img-responsive" id="category_image_alignment" src={{category.categoryImage}} alt="Image Not Found">
+				</div>
+				<div id="category_caption_alignment" class="caption">
+					<h3>{{category.bookCategoryName}}</h3>
+				</div>
+				<div id="category_button_alignment">
+					<button (click)="getProductById(category.categoryId)" class="btn btn-success">View Books</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ 
